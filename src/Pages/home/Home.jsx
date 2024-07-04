@@ -4,12 +4,14 @@ import WhoWeAre from "../whoweare/WhoWeAre";
 import Appinment from "./Appinment";
 import Faq from "./Faq";
 import Review from "./Review";
+import Statistics from "./Statistics";
 
 
 const Home = () => {
     return (
         <div>
             <Banner/>
+            <Statistics/>
             <WhoWeAre/>
             <Service/>
             <Review/>
