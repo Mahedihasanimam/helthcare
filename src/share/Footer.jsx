@@ -6,44 +6,30 @@ import { CiLinkedin } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
+
+import logo from '../assets/resources/logo light.png';
 const Footer = () => {
   return (
-    <footer className="px-4 divide-y bg-[#262e37]  text-white ">
+    <footer className="px-4 divide-y bg-[#020043]  text-white ">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-        <div className="lg:w-1/3 ">
+        <div className="lg:w-1/3 space-y-6">
           <Link
             to={"/"}
             className="lg:text-4xl no-underline  text-xl font-bold"
           >
-            <span className="text-green-500">M</span>EHEDI
-            <span className="text-green-500">.</span>
+            <img src={logo} alt="" />
           </Link>
-          <div className="space-y-3">
-            <div className="uppercase dark:text-gray-900"></div>
-            <div className="flex justify-start space-x-6">
-              <Link
-                target="_blank"
-                to={"https://www.facebook.com/profile.php?id=100064053792788"}
-              >
-                <FaFacebook size={25} />
-              </Link>
-              <Link target="_blank" to={"https://github.com/Mahedihasanimam"}>
-                <FaGithub size={25} />
-              </Link>
+          <p className="max-w-sm">
+          123 Main Street Anytown, USAPostal Code: 12345
 
-              <Link
-                target="_blank"
-                to={"https://www.linkedin.com/in/mehedi60/"}
-              >
-                <CiLinkedin size={25} />
-              </Link>
-            </div>
-          </div>
+Support: support@oyolloo.com
+Available : 10:00am to 07:00pm
+          </p>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4 lg:grid-cols-3">
           <div className="space-y-3">
-            <h3 className="tracking-wide uppercase dark:text-gray-900">
-              Quick Actions
+          <h3 className="tracking-wide uppercase dark:text-gray-900">
+             quick links
             </h3>
             <ul className="space-y-1">
               <li>
@@ -54,66 +40,74 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:border-b-2 border-green-500"
-                  to={"/about"}
+                  
                 >
-                  About
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
                   className="hover:border-b-2 border-green-500"
-                  to={"/blog"}
+                
                 >
-                  blog
+                  success page
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:border-b-2 border-green-500"
-                  href="/src/assets/Mehedi_resume(front-end developer).pdf"
-                  download={"mehedi resume"}
+                
                 >
-                  Resume
-                </a>
+                 Terms and condition
+                </Link>
               </li>
+              
             </ul>
           </div>
           <div className="space-y-3">
             <h3 className="tracking-wide uppercase dark:text-gray-900">
-             TopSkills
+             service
             </h3>
             <ul className="space-y-1">
               <li>
                 <a rel="noopener noreferrer" x>
-                  Front-end development
+                 scheduling
                 </a>
               </li>
               <li>
                 <a rel="noopener noreferrer" >
-                  Jr.MERN stack development
+                  contactus
+                </a>
+              </li>
+              <li>
+                <a rel="noopener noreferrer" >
+                  patient portal
                 </a>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="uppercase dark:text-gray-900">Contact with us</h3>
-            <ul className="space-y-1">
-              <li>
-                <a className="flex items-center gap-2" >
-                 <MdEmail className="text-green-400"/> mdmehedihasen678@gmail.com
-                </a>
-              </li>
-              <li>
-                <a className="flex items-center gap-2" >
-                <FaPhoneAlt className="text-green-400"/>+8801860650703
-                </a>
-              </li>
-              <li>
-                <a className="flex items-center gap-2">
-                 <IoLocation className="text-green-400"/> mymensingh,Bangladesh
-                </a>
-              </li>
-            </ul>
+            <h3 className="uppercase dark:text-gray-900">Follow us</h3>
+            <div className="space-y-3">
+            <div className="uppercase dark:text-gray-900"></div>
+            <div className="flex justify-start space-x-6">
+              <Link
+                
+              
+              >
+                <FaFacebook size={25} />
+              </Link>
+          
+
+              <Link
+                
+                
+              >
+                <CiLinkedin size={25} />
+              </Link> 
+            </div>
+              <p>@docplus 2024</p>
+          </div>
           </div>
         </div>
       </div>
